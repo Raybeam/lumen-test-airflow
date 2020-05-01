@@ -8,10 +8,11 @@ so you can test Lumen more effectively.
 ## Set up : Virtual environment
 TODO: Change `load_examples = True` to `False`
 TODO: Change `dag_folder` to `$PWD/dags`
-TODO: Change `plugins_folder` to `$PWD/plugins`
+TODO: Change `plugins_folder` to `$PWD`
+TODO: Require RBAD be true
 
 `> python -m venv .`
+`> echo "export AIRFLOW_HOME=$PWD/airflow" >> bin/activate`
 `> source bin/activate`
-`> export AIRFLOW_HOME=$PWD/airflow`
 `> pip install -r requirements.txt`
 `> airflow initdb`

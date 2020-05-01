@@ -1,4 +1,6 @@
 # Lumen / Airflow 
+dags/lumen.py
+plugins/
 pyvenv.cfg
 bin/
 airflow/
