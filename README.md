@@ -11,8 +11,18 @@ TODO: Change `dag_folder` to `$PWD/dags`
 TODO: Change `plugins_folder` to `$PWD`
 TODO: Require RBAD be true
 
+### Set up the Python virtual environment
 `> python -m venv .`
-`> echo "export AIRFLOW_HOME=$PWD/airflow" >> bin/activate`
+
+### Set AIRFLOW_HOME
+By putting the `AIRFLOW_HOME` env in the `bin/activate` file, you set the path each time you set up your venv.
+`> echo "export AIRFLOW_HOME=$PWD" >> bin/activate`
+
+### Activate your venv
 `> source bin/activate`
+
+### Install dependencies
 `> pip install -r requirements.txt`
+
+### Initialize your Airflow DB
 `> airflow initdb`
