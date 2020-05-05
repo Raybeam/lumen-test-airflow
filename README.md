@@ -16,6 +16,7 @@ TODO: Require RBAD be true
 
 ### Set AIRFLOW_HOME
 By putting the `AIRFLOW_HOME` env in the `bin/activate` file, you set the path each time you set up your venv.
+
 `> echo "export AIRFLOW_HOME=$PWD" >> bin/activate`
 
 ### Activate your venv
@@ -26,3 +27,21 @@ By putting the `AIRFLOW_HOME` env in the `bin/activate` file, you set the path e
 
 ### Initialize your Airflow DB
 `> airflow initdb`
+
+### Remove example DAGs from cfg file
+They're annoying to look at
+
+`> sed -i'.orig' 's/^load_examples =.*$/load_examples = False/' airflow.cfg`
+
+### Switch to roles-based access 
+Lumen doesn't work without it
+
+`> sed -i'.orig' 's/^rbac =.*$/rbac = True/' airflow.cfg`
+
+### Symlink your Lumen dev directory to plugins
+`> mkdir ./plugins/`
+`ln -s <your Lumen dev path> ./plugins/`
+
+### Set up a user (admin:admin)
+
+`> airflow create_user -r Admin -u admin -e admin@example.com -f admin -l user -p admin`
