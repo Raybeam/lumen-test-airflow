@@ -3,7 +3,10 @@ dags/lumen.py
 plugins/
 pyvenv.cfg
 bin/
-airflow/
+airflow.db
+logs/
+unittests.cfg
+webserver_config.py
 include/
 .vscode/
 
