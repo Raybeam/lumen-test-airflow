@@ -43,13 +43,14 @@ default_args = {
     "depends_on_past": False,
     "email_on_failure": False,
     "email_on_retry": False,
-    "retries": None,
+    "retries": 1,
+    "retry_delay": timedelta(minutes=5),
 }
 
 
 # Using a DAG context manager, you don't have to specify the dag property of each task
 with DAG(
-    "lumen-sample-dag",
+    "rb-sample-dag",
     start_date=dt.days_ago(3),
     max_active_runs=3,
     schedule_interval=timedelta(
