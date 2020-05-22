@@ -27,6 +27,10 @@ By putting the `AIRFLOW_HOME` env in the `bin/activate` file, you set the path e
 ### Initialize your Airflow DB
 `> airflow initdb`
 
+### Set up a user (admin:admin)
+
+`> airflow create_user -r Admin -u admin -e admin@example.com -f admin -l user -p admin`
+
 ### Symlink your plugin dev directory to plugins
 `> mkdir ./plugins/`
 
@@ -34,8 +38,5 @@ By putting the `AIRFLOW_HOME` env in the `bin/activate` file, you set the path e
 
 ### Install any required libraries from your plugin
 
-`> pip install -r ./plugins/<your plugin name>/requirements.txt
+`> pip install -r ./plugins/<your plugin name>/requirements.txt`
 
-### Set up a user (admin:admin)
-
-`> airflow create_user -r Admin -u admin -e admin@example.com -f admin -l user -p admin`
