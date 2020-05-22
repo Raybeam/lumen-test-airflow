@@ -1,6 +1,6 @@
 # Lumen / Airflow 
 *.pid
-dags/lumen.py
+dags/rb_status.py
 plugins/
 pyvenv.cfg
 bin/
