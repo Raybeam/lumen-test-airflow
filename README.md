@@ -59,7 +59,7 @@ In order to deploy your emails on these platforms, add the above variables as en
 
 ### Astronomer
 Enter in the environmental variables on the deployment page under "environmental variables"
-![Astronomer env variables](/imgs/Astronomer_Config.png?raw=true "Astronomer")\
+![Astronomer env variables](/imgs/Astronomer_Config.png?raw=true "Astronomer")
 ### Cloud Composer
 Enter in the environmental variables on the deployment page under "environmental variables"
 ![Cloud Composer env variables](/imgs/Cloud_Composer_Config.png?raw=true "Cloud Composer")
