@@ -57,5 +57,9 @@ Ensure that these values are set. User, password, host, and mail_from are all va
 ### Setting up email with provider that does not expose airflow.cfg
 In order to deploy your emails on these platforms, add the above variables as environmental variables in the the platform's provided interface. Below I'll show how to do this for astronomer and google cloud composer...
 
+### Astronomer
+Enter in the environmental variables on the deployment page under "environmental variables"
 ![Astronomer env variables](/imgs/Astronomer_Config.png?raw=true "Astronomer")\
+### Cloud Composer
+Enter in the environmental variables on the deployment page under "environmental variables"
 ![Cloud Composer env variables](/imgs/Cloud_Composer_Config.png?raw=true "Cloud Composer")
