@@ -58,7 +58,7 @@ Ensure that these values are set. User, password, host, and mail_from are all va
 In order to deploy your emails on these platforms, add the above variables as environmental variables in the the platform's provided interface. Below I'll show how to do this for astronomer and google cloud composer...
 
 ### Astronomer
-[Astronomer specifically has setup instructions going through how to setup a smtp server](https://www.astronomer.io/docs/airflow-alerts/)
+[Astronomer specifically has setup instructions going through how to setup a smtp server.](https://www.astronomer.io/docs/airflow-alerts/)\
 Enter in the environmental variables (smtp_host, smtp_starttls, stmp_ssl, stmp_user, smtp_password, smtp_port, smtp_mail_from) on the deployment page under "environmental variables"
 ![Astronomer env variables](/imgs/Astronomer_Config.png?raw=true "Astronomer")
 ### Cloud Composer
