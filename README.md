@@ -40,3 +40,22 @@ By putting the `AIRFLOW_HOME` env in the `bin/activate` file, you set the path e
 
 `> pip install -r ./plugins/<your plugin name>/requirements.txt`
 
+## Setup your lumen deployment with emails
+
+Setting up email notifications requires you to edit and add your smtp server credentials to your airflow.cfg
+Ensure that these values are set. User, password, host, and mail_from are all values you should fill in from your smtp server settings:
+
+>`[smtp]`\
+>`smtp_host = YOUR_SMTP_HOST`\
+>`smtp_starttls = True`\
+>`smtp_ssl = False`\
+>`smtp_user = YOUR_EMAIL_ADDRESS`\
+>`smtp_password = 16_DIGIT_APP_PASSWORD`\
+>`smtp_port = 587`\
+>`smtp_mail_from = YOUR_EMAIL_ADDRESS`
+
+### Setting up email with provider that does not expose airflow.cfg
+In order to deploy your emails on these platforms, add the above variables as environmental variables in the the platform's provided interface. Below I'll show how to do this for astronomer and google cloud composer...
+
+![Astronomer env variables](/imgs/Astronomer_Config.png?raw=true "Astronomer")\
+![Cloud Composer env variables](/imgs/Cloud_Composer_Config.png?raw=true "Cloud Composer")
